@@ -216,6 +216,62 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif;
   }
+  /* Smooth page-enter on every navigation */
+  main > * {
+    animation: ha-fade-in 400ms ease both;
+  }
+  /* Smooth scrolling site-wide */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ── Animation Keyframes ─────────────────────────────────────── */
+@keyframes ha-fade-up {
+  from { opacity: 0; transform: translateY(36px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes ha-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes ha-slide-left {
+  from { opacity: 0; transform: translateX(-52px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes ha-slide-right {
+  from { opacity: 0; transform: translateX(52px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes ha-scale-in {
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes ha-blur-in {
+  from { opacity: 0; filter: blur(12px); transform: scale(1.04); }
+  to   { opacity: 1; filter: blur(0px); transform: scale(1); }
+}
+@keyframes ha-line-grow {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+@keyframes ha-float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+@keyframes ha-shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes ha-count {
+  from { opacity: 0; transform: translateY(16px) scale(0.95); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.shimmer-bg {
+  background: linear-gradient(90deg, hsl(var(--muted)) 25%, hsl(var(--border)) 50%, hsl(var(--muted)) 75%);
+  background-size: 200% 100%;
+  animation: ha-shimmer 1.8s ease infinite;
 }
 
 @layer utilities {
