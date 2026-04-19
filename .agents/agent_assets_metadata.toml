@@ -1,0 +1,14 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "62q-t9gT2jcuDm6Ve0xhO"
+uri = "file://artifacts/hangout-alley/public/images/crispy-pata.png"
+type = "image"
+title = "Crispy pata dish"
+
+[[generated]]
+id = "NwmVaPHOgwwYQeBpVocn8"
+uri = "file://artifacts/hangout-alley/public/images/seafood.png"
+type = "image"
+title = "Seafood platter"

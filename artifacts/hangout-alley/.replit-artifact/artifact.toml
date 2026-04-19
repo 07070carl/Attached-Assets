@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Hangout Alley Siargao"
+version = "1.0.0"
+id = "artifacts/hangout-alley"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 26014
+
+[services.development]
+run = "pnpm --filter @workspace/hangout-alley run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/hangout-alley", "run", "build" ]
+publicDir = "artifacts/hangout-alley/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "26014"
+BASE_PATH = "/"

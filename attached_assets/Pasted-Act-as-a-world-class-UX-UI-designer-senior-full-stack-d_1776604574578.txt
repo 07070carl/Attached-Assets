@@ -1,0 +1,171 @@
+Act as a world-class UX/UI designer, senior full-stack developer, and systems architect.
+
+Your task is to design and generate a complete, production-level web-based system based on the following business knowledge base.
+
+======================== BUSINESS KNOWLEDGE BASE
+
+Business Name: Hangout Alley Siargao Type: Restaurant Location: Dapa, Surigao del Norte Price Range: ₱500–₱1,000 per person Rating: 4.7 (47 reviews)
+
+Key Features & Insights:
+
+Offers dine-in and takeout services
+
+Known for: crispy pata, lechon, fresh seafood, good food presentation
+
+Customer feedback highlights:
+
+Peaceful, garden-like atmosphere
+
+Elegant yet cozy island-inspired design
+
+Fast and attentive service
+
+Clean environment
+
+Great value for money
+
+Strong visual appeal (food plating + ambiance)
+
+Suitable for casual dining and special occasions
+
+======================== SYSTEM OBJECTIVE
+
+Design a modern Restaurant Management and Customer Experience Web System that digitizes and enhances business operations and customer interaction.
+
+======================== EXPECTED OUTPUT
+
+System Overview
+
+Purpose of the system
+
+Target users (Admin, Staff, Customers)
+
+Key problems being solved
+
+Core Features (Advanced & Realistic) Include:
+
+Online Ordering System (Dine-in reservation + Takeout)
+
+Digital Menu with images and categories
+
+Table Reservation System
+
+Order Management Dashboard (real-time)
+
+Customer Review & Rating System
+
+Staff Management Module
+
+Sales & Analytics Dashboard
+
+Inventory Tracking (ingredients/food stock)
+
+Notification System (order updates)
+
+UI/UX Design (World-Class Level)
+
+Describe layout, colors, typography (island-inspired aesthetic)
+
+Focus on:
+
+Clean and modern interface
+
+Mobile-first design
+
+Smooth user flow
+
+Emotional design (cozy, relaxing vibe)
+
+Database Design (MySQL)
+
+Provide complete ERD explanation
+
+Tables must include:
+
+users
+
+customers
+
+staff
+
+menu_items
+
+categories
+
+orders
+
+order_items
+
+reservations
+
+reviews
+
+inventory
+
+Include primary keys, foreign keys, and relationships
+
+Advanced SQL Implementation Demonstrate:
+
+INNER JOIN (orders + customers)
+
+LEFT JOIN (menu + categories)
+
+Aggregations (sales reports)
+
+Subqueries (top-selling dishes)
+
+Transactions (order processing)
+
+System Architecture
+
+Frontend: HTML, CSS, JavaScript (or modern framework optional)
+
+Backend: PHP (structured, secure coding)
+
+Database: MySQL
+
+API-ready structure for future integration
+
+Security Features
+
+Authentication & Authorization
+
+Password hashing
+
+SQL Injection prevention
+
+Input validation
+
+Scalability & Future Enhancements
+
+Mobile app integration
+
+QR-based ordering system
+
+AI-based food recommendations
+
+Customer loyalty system
+
+======================== OUTPUT STYLE
+
+Professional, structured, and detailed
+
+Industry-level explanation
+
+Clean formatting
+
+Practical and implementable (not theoretical)
+
+======================== IMPORTANT
+
+Base all design decisions on the business identity:
+
+Cozy island vibe
+
+High-quality food presentation
+
+Relaxing dining experience
+
+Efficient and friendly service
+
+The system must reflect and enhance these strengths digitally.
