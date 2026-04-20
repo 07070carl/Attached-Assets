@@ -34,9 +34,12 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname),
   build: {
-    // Note: This puts your files in dist/public
+    // DISABLING SOURCEMAPS fixes the "Can't resolve original location" errors in Render logs
+    sourcemap: false, 
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    // Helps with the "Large Chunk" warning by increasing the limit slightly
+    chunkSizeWarningLimit: 1200,
   },
   server: {
     port,
