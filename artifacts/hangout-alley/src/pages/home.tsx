@@ -30,15 +30,18 @@ export function Home() {
         {/* Background image — real restaurant interior */}
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="/images/restaurant-interior.png"
-            alt="Hangout Alley Siargao dining room"
-            className="w-full h-full object-cover object-center"
-            style={{ animation: "ha-blur-in 1.8s cubic-bezier(0.25,1,0.5,1) 0ms both" }}
+            src="/images/buffet-spread.png"
+            alt="Hangout Alley Siargao buffet spread"
+            className="w-full h-full object-cover"
+            style={{
+              objectPosition: "60% center",
+              animation: "ha-blur-in 1.8s cubic-bezier(0.25,1,0.5,1) 0ms both",
+            }}
           />
-          {/* Stronger gradient for text legibility over the bright interior */}
-          <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-900/75 to-zinc-900/40" />
-          {/* Side vignette for depth */}
-          <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/40 via-transparent to-zinc-950/40" />
+          {/* Rich dark gradient — bottom for text, top for brand space */}
+          <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/65 to-zinc-900/30" />
+          {/* Left-side vignette so text stays legible */}
+          <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/70 via-zinc-950/20 to-transparent" />
         </div>
 
         <div className="relative z-10 container px-4 md:px-6 pb-4">
