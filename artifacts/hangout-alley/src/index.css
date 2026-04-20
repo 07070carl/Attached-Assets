@@ -103,8 +103,8 @@
   --muted: 40 25% 92%;
   --muted-foreground: 140 10% 45%;
 
-  /* Accent: Coral / Terracotta */
-  --accent: 15 60% 60%;
+  /* Accent: Brand Orange (matches logo) */
+  --accent: 36 97% 52%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 70% 50%;

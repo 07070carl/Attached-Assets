@@ -27,15 +27,18 @@ export function Home() {
 
       {/* ══ HERO ════════════════════════════════════════════════ */}
       <section className="relative h-screen min-h-[640px] flex flex-col justify-end bg-zinc-950">
-        {/* Background image — subtle slow zoom */}
+        {/* Background image — real restaurant interior */}
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="/images/crispy-pata.png"
-            alt="Hangout Alley Siargao"
+            src="/images/restaurant-interior.png"
+            alt="Hangout Alley Siargao dining room"
             className="w-full h-full object-cover object-center"
             style={{ animation: "ha-blur-in 1.8s cubic-bezier(0.25,1,0.5,1) 0ms both" }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-900/60 to-zinc-900/10" />
+          {/* Stronger gradient for text legibility over the bright interior */}
+          <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-900/75 to-zinc-900/40" />
+          {/* Side vignette for depth */}
+          <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/40 via-transparent to-zinc-950/40" />
         </div>
 
         <div className="relative z-10 container px-4 md:px-6 pb-4">
@@ -68,12 +71,12 @@ export function Home() {
 
           <div style={heroAnim(900)} className="flex flex-wrap gap-3 pb-16">
             <Link href="/reserve">
-              <Button size="lg" className="h-13 px-8 text-base bg-white text-zinc-900 hover:bg-white/90 rounded-full font-semibold transition-all duration-200 hover:scale-[1.03] active:scale-[0.97]">
+              <Button size="lg" style={{ background: "hsl(36 97% 52%)", color: "#fff" }} className="h-13 px-8 text-base rounded-full font-semibold shadow-lg shadow-amber-500/25 transition-all duration-200 hover:scale-[1.04] hover:brightness-110 active:scale-[0.97]">
                 Book a Table
               </Button>
             </Link>
             <Link href="/menu">
-              <Button size="lg" variant="outline" className="h-13 px-8 text-base border-white/25 text-white hover:bg-white/10 hover:text-white rounded-full transition-all duration-200 hover:scale-[1.03] active:scale-[0.97]">
+              <Button size="lg" variant="outline" className="h-13 px-8 text-base border-white/30 text-white hover:bg-white/10 hover:text-white rounded-full transition-all duration-200 hover:scale-[1.03] active:scale-[0.97]">
                 View Menu <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </Link>
